@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 import { PropTypes } from 'prop-types';
 
+import * as S from './styles';
+
 class MissionCard extends Component {
   render() {
     const { name, year, country, destination } = this.props;
     return (
-      <div data-testid="mission-card">
-        <p data-testid="mission-name">{ name }</p>
-        <p data-testid="mission-year">{ year }</p>
-        <p data-testid="mission-country">{ country }</p>
-        <p data-testid="mission-destination">{ destination }</p>
-      </div>
+      <S.Container data-testid="mission-card">
+        <S.Name data-testid="mission-name">{ name }</S.Name>
+        <S.Year data-testid="mission-year">{ year }</S.Year>
+        <S.Country data-testid="mission-country">{ country }</S.Country>
+        <S.Destination data-testid="mission-destination">{ destination }</S.Destination>
+      </S.Container>
     );
   }
 }

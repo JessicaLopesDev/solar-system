@@ -5,6 +5,7 @@ export const Container = styled.div`
   flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
+  background-color: aquamarine;
 `;
 
 export const Planet = styled.p`
